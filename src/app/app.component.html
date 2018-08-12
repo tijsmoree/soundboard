@@ -9,4 +9,4 @@
   </div>
 </nav>
 
-<app-sound *ngFor="let sound of sounds | filter : 'name' : search" [sound]="sound"></app-sound>
+<app-sound *ngFor="let sound of sounds | filter : {'name': search}" [sound]="sound"></app-sound>
