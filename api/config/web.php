@@ -3,7 +3,7 @@
 $db = require(__DIR__ . '/db.php');
 
 return [
-  'id' => 'yii2mini',
+  'id' => 'soundboard-tijsmoree',
   'basePath' => dirname(__DIR__),
   'components' => [
     'request' => [
