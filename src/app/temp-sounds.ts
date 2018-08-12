@@ -1,4 +1,4 @@
-import { Sound } from './sound';
+import { Sound } from './sound'
 
 export const SOUNDS: Sound[] = [
   { id: 11, name: 'Mr. Nice', icon: 'user' },

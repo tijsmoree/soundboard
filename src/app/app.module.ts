@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
-import { AppComponent } from './app.component';
-import { SoundComponent } from './sound/sound.component';
-import { FilterPipe } from './filter.pipe';
-import { AddModalComponent } from './add-modal/add-modal.component';
+import { AppComponent } from './app.component'
+import { SoundComponent } from './sound/sound.component'
+import { FilterPipe } from './filter.pipe'
+import { AddModalComponent } from './add-modal/add-modal.component'
 
 @NgModule({
   declarations: [

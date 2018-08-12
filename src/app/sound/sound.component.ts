@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
 
 import { Sound } from '../sound'
 
@@ -10,13 +10,15 @@ import { Sound } from '../sound'
 export class SoundComponent implements OnInit {
   @Input() sound: Sound
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor () {
+    //
   }
 
-  play(id: number): void {
+  ngOnInit () {
+    //
+  }
+
+  play (id: number): void {
     console.log(id)
   }
-
 }

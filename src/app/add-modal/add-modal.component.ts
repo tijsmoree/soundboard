@@ -13,16 +13,17 @@ export class AddModalComponent implements OnInit {
 
   @Input() sound: Sound
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor (public activeModal: NgbActiveModal) { }
 
-  ngOnInit() {
+  ngOnInit () {
+    //
   }
 
-  close() {
+  close () {
     this.activeModal.close()
   }
 
-  save() {
+  save () {
     this.activeModal.close(this.sound)
   }
 }
