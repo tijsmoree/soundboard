@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Geluid toevoegen!</h4>
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <label for="name">Naam</label>
+    <input id="name" name="name" [(ngModel)]="sound.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="icon">Symbool</label>
+    <input id="icon" name="icon" [(ngModel)]="sound.icon" class="form-control">
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="submit" class="btn btn-outline-dark" (click)="save()">Opslaan</button>
+</div>

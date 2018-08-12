@@ -1,26 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { SoundComponent } from './sound/sound.component';
 import { FilterPipe } from './filter.pipe';
+import { AddModalComponent } from './add-modal/add-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SoundComponent,
-    FilterPipe
+    FilterPipe,
+    AddModalComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    AddModalComponent
+  ]
 })
 
 export class AppModule { }

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
-//import { SoundComponent } from './sound/sound.component'
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap'
+import { AddModalComponent } from './add-modal/add-modal.component'
 
 import { SOUNDS } from './temp-sounds'
+import { Sound } from './sound';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,20 @@ import { SOUNDS } from './temp-sounds'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Soundboard';
+  title = 'Soundboard'
 
-  sounds = SOUNDS;
+  sounds = SOUNDS
+
+  constructor(private modalService: NgbModal) {}
+
+  addSound() {
+    const modalRef = this.modalService.open(AddModalComponent)
+    modalRef.componentInstance.sound = new Sound()
+    
+    modalRef.result.then((result) => {
+      console.log(result)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
 }
