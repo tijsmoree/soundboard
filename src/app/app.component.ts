@@ -15,6 +15,7 @@ export class AppComponent {
   title = 'Soundboard'
 
   sounds = SOUNDS
+  search = ''
 
   constructor (private modalService: NgbModal) {}
 
