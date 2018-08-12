@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { SoundComponent } from './sound/sound.component'
+//import { SoundComponent } from './sound/sound.component'
 
 import { SOUNDS } from './temp-sounds'
 
