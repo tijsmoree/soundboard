@@ -9,12 +9,12 @@ use app\models\Sound;
 
 class SoundsController extends Controller {
 
-  public function beforeAction($action) {
-    Yii::$app->response->format = Response::FORMAT_JSON;
+  // public function beforeAction($action) {
+  //   Yii::$app->response->format = Response::FORMAT_JSON;
 
-    $this->enableCsrfValidation = false;
-    return parent::beforeAction($action);
-  }
+  //   $this->enableCsrfValidation = false;
+  //   return parent::beforeAction($action);
+  // }
 
   public function actionIndex() {
     return array_map(function ($sound) {

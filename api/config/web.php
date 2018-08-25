@@ -3,7 +3,12 @@
 return [
   'id' => 'soundboard-tijsmoree',
   'basePath' => dirname(__DIR__),
-  'controllerNamespace' => 'app\controllers',
+  'controllerMap' => [
+    'sounds' => [
+      'class' => 'app\controllers\SoundsController',
+      'enableCsrfValidation' => false
+    ],
+  ],
   'components' => [
     'request' => [
       'cookieValidationKey' => 'pfwappomgepaoemomcppjcp0w4054u9tqjfm2qqkjf',
