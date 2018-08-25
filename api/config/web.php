@@ -2,10 +2,10 @@
 
 return [
   'id' => 'soundboard-tijsmoree',
-  'basePath' => __DIR__ . '/../',
+  'basePath' => dirname(__DIR__),
   'controllerNamespace' => 'api\controllers',
   'aliases' => [
-    '@api' => __DIR__ . '/../',
+    '@api' => dirname(__DIR__),
   ],
   'components' => [
     'request' => [
