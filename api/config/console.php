@@ -2,7 +2,7 @@
 
 return [
   'id' => 'soundboard-tijsmoree',
-  'basePath' => __DIR__ . '/../',
+  'basePath' => dirname(__DIR__),
   'components' => [
     'cache' => [
       'class' => 'yii\caching\FileCache'
