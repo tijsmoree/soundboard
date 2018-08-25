@@ -1,6 +1,6 @@
 <?php
 
-namespace api\models;
+namespace app\models;
 
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;

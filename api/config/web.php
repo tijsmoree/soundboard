@@ -3,10 +3,7 @@
 return [
   'id' => 'soundboard-tijsmoree',
   'basePath' => dirname(__DIR__),
-  'controllerNamespace' => 'api\controllers',
-  'aliases' => [
-    '@api' => dirname(__DIR__),
-  ],
+  'controllerNamespace' => 'app\controllers',
   'components' => [
     'request' => [
       'cookieValidationKey' => 'pfwappomgepaoemomcppjcp0w4054u9tqjfm2qqkjf',

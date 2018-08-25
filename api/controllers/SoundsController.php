@@ -1,11 +1,11 @@
 <?php
-namespace api\controllers;
+namespace app\controllers;
 
 use Yii;
 use yii\web\Response;
 use yii\web\Controller;
 use yii\web\HttpException;
-use api\models\Sound;
+use app\models\Sound;
 
 class SoundsController extends Controller {
 
