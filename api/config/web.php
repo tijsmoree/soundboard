@@ -9,7 +9,10 @@ return [
   ],
   'components' => [
     'request' => [
-      'cookieValidationKey' => 'pfwappomgepaoemomcppjcp0w4054u9tqjfm2qqkjf'
+      'cookieValidationKey' => 'pfwappomgepaoemomcppjcp0w4054u9tqjfm2qqkjf',
+      'parsers' => [
+        'application/json' => 'yii\web\JsonParser'
+      ]
     ],
     'cache' => [
       'class' => 'yii\caching\FileCache'
