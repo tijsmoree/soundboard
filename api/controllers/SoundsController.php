@@ -35,7 +35,7 @@ class SoundsController extends Controller {
     $sound->setAttributes(Yii::$app->request->post());
 
     if (!$sound->save()) {
-      throw new HttpException(422, json_encode($contract->errors));
+      throw new HttpException(422, json_encode($sound->errors));
     }
   }
 
@@ -46,7 +46,7 @@ class SoundsController extends Controller {
     }
 
     if (!$sound->delete()) {
-      throw new HttpException(422, json_encode($contract->errors));
+      throw new HttpException(422, json_encode($sound->errors));
     }
   }
 }
