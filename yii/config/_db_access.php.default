@@ -1,8 +1,0 @@
-<?php
-
-return [
-    'dsn' => 'mysql:host=DBHOST;dbname=DBNAME',
-    'username' => 'DBUSERNAME',
-    'password' => 'DBPASSWORD',
-    'charset' => 'utf8',
-];
